@@ -1,8 +1,8 @@
 const { Pool } = require('pg');
 
 const config = {
-  host: 'localhost',
-  port: 8000,
+  host: '178.128.227.63',
+  port: 5432,
   user: 'postgres',
   password: 'admin',
   database: 'shopify',
