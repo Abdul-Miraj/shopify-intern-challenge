@@ -2,7 +2,7 @@ export const typeDefs = `
   type LineItem {
     line_item_id: Int!
     qty: Int
-    price: Int
+    price: Float
     product: Product
     order: Order
     shop: Shop
