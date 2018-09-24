@@ -18,8 +18,8 @@ export const resolvers = {
     },
 
     Mutation: {
-        deleteOrder: async  (parentValue, {product_id}) => {
-            return await deleteOrder(product_id);
+        deleteOrder: async  (parentValue, {order_id}) => {
+            return await deleteOrder(order_id);
         },
 
     },
