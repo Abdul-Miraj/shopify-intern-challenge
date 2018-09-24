@@ -19,7 +19,9 @@ const updateShop = async (shopId, name) => {
 const deleteShop = async (shopId) => {
     const query = deleteShopQuery({shop_id: shopId});
 
-    return await db.getQueryFromDB(query);
+    await db.getQueryFromDB(query);
+    
+    return null;
 };
 
 module.exports = {

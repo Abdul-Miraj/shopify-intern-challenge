@@ -22,7 +22,8 @@ const updateProduct = async (productId, name, price, active) => {
 const deleteProduct = async (productId) => {
     const query = deleteProductQuery({product_id: productId});
 
-    return await db.getQueryFromDB(query);
+    await db.getQueryFromDB(query);
+    return null;
 };
 
 module.exports = {

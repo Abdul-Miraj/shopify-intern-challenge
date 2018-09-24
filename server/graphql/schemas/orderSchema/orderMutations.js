@@ -19,7 +19,9 @@ const updateTotalPriceForOrder = async orderId => {
 const deleteOrder = async orderId => {
     const query = utilQueries.deleteOrderQuery({order_id: orderId});
 
-    return await db.getQueryFromDB(query);
+    await db.getQueryFromDB(query);
+    
+    return null
 };
 
 module.exports = {
