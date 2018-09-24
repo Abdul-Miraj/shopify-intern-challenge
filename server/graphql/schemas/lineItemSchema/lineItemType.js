@@ -6,7 +6,6 @@ export const typeDefs = `
     product: Product
     order: Order
     shop: Shop
-    status: String
   }
 
   extend type Mutation {

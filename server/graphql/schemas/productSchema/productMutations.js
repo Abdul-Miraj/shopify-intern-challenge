@@ -15,8 +15,6 @@ const updateProduct = async (productId, name, price, active) => {
 
     const updatedProduct = await db.getQueryFromDB(query);
 
-    await updateTotalPriceForOrder(checkOrderId);
-
     return updatedProduct;
 };
 
